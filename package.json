@@ -1,0 +1,29 @@
+{
+  "name": "tieng-trung-doi-thuong",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0 --port 3000",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0 --port 3000",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "generate-audio": "tsx scripts/generate-audio.ts",
+    "test:tutor-live": "node --env-file=.env.local --import tsx scripts/check-tutor-live.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.31.0",
+    "lucide-react": "0.511.0",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.8.3"
+  }
+}
