@@ -188,7 +188,7 @@ export function ClassroomView({
               </p>
             )}
           </div>
-          {connection !== "loading" && (
+          {/* {connection !== "loading" && (
             <>
               <button
                 className="text-button"
@@ -204,7 +204,7 @@ export function ClassroomView({
                 <RefreshCw size={17} />
               </button>
             </>
-          )}
+          )} */}
         </div>
       )}
 
